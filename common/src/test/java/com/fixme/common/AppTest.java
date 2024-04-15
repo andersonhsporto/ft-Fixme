@@ -1,4 +1,4 @@
-package com.fixme;
+package com.fixme.common;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

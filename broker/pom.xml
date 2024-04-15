@@ -35,11 +35,17 @@
     </dependency>
 
     <dependency>
-      <groupId>com.fixme.router</groupId>
-      <artifactId>router</artifactId>
-      <version>router</version>
+      <groupId>com.fixme.common</groupId>
+      <artifactId>common</artifactId>
+      <version>common</version>
       <type>jar</type>
       <scope>import</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fixme.common</groupId>
+      <artifactId>common</artifactId>
+      <version>common</version>
+      <scope>compile</scope>
     </dependency>
 
   </dependencies>
