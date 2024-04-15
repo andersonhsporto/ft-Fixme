@@ -1,4 +1,4 @@
-package com.fixme.message;
+package com.fixme.router;
 
 /**
  * Hello world!

@@ -1,4 +1,4 @@
-package com.fixme.message;
+package com.fixme.router;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

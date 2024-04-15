@@ -7,10 +7,10 @@
     <artifactId>fix-me</artifactId>
     <version>fix-me</version>
   </parent>
-  <groupId>com.fixme.message</groupId>
-  <artifactId>message</artifactId>
-  <version>message</version>
-  <name>message</name>
+  <groupId>com.fixme.router</groupId>
+  <artifactId>router</artifactId>
+  <version>router</version>
+  <name>router</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -20,4 +20,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>21</source>
+          <target>21</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
