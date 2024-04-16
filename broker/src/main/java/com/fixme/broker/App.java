@@ -1,29 +1,23 @@
 package com.fixme.broker;
 
 
-import jline.console.ConsoleReader;
+import com.fixme.broker.handler.ConnectionHandler;
+import lombok.extern.log4j.Log4j2;
 
-import java.io.IOException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class App 
+
+@Log4j2
+public class App
 {
     public static void main( String[] args )
     {
+        log.info("Broker Application Has Started");
+        ConnectionHandler connectionHandler = new ConnectionHandler();
 
-        //Router router = new Router();
+        Thread connectionHandlerThread = new Thread(connectionHandler);
 
-        try {
-            ConsoleReader reader = new ConsoleReader();
-
-            String line;
-
-            while ((line = reader.readLine("Enter command: ")) != null) {
-                System.out.println("Got: [" + line + "]");
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-
+        connectionHandlerThread.start();
     }
 }
